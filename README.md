@@ -1,8 +1,7 @@
-# # ˖ ࣪ ⊹ ˖ .𖥔 our little universe .𖥔˖ ⊹ ࣪ ˖ - a customizable, interactive gift app
+# # ˖ ࣪ ⊹ ˖ .𖥔 our little universe .𖥔˖ ⊹ ࣪ ˖
+a customizable, interactive gift app
 
 A  little digital universe made for someone special. Drop in your photos, write a sweet letter, and enjoy a blind box inspired mini game that pulls randomized photo cards. Built with Electron.js and vanilla HTML, CSS and JavaScript. 
-
----
 
 ## ✦ Features ✦
 - **Letter** - write a little personal note that users can view inside its own modal
@@ -10,8 +9,6 @@ A  little digital universe made for someone special. Drop in your photos, write 
 - **Blind Box** - A gacha-styled card pull system with three tiers (common, rare, legendary), sparkle animations, and a holographic card flip reveal. Users also have the option to save these pulls to the photo album.
 - **Animated Galaxy Background** - a twinkling pixel star field with soft pink nebula clouds, drawn using the HTML <canvas> element.
 - **Icon States** - planet icons are able to swap to an "after-click" version once visited. 
-
----
 
 ## ✦ Project Structure ✦
 ```
@@ -25,8 +22,6 @@ little-universe/
     ├── album/          # yearly photo folders (2022/, 2023/, etc.)
     └── gacha/          # card images for the blind box pool
 ```
-
----
 
 ## ✦ Getting Started ✦
 **Prerequisites:** [Node.js](https://nodejs.org/) and npm
