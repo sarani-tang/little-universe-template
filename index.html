@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Our Little Universe</title>
+        <link rel="icon" href="./assets/icons/heart.png"> <!-- Tab Icon -->
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <!-- Galaxy Background -->
+        <canvas id="galaxy-canvas"></canvas>
+
+        <!-- ⚬──────────✧──────────⚬  
+                  Main Universe
+             ⚬──────────✧──────────⚬ -->
+        <div id="universe">
+
+            <div class="title-wrap">
+                <h1>˖ ࣪ ⊹ ˖ .𖥔 our little universe .𖥔˖ ⊹ ࣪ ˖</h1>
+                <p class="subtitle">a silly little universe built just for you!</p>
+            </div>
+
+            <!-- ⚬────────────────────✧────────────────────⚬  
+                                PLANET ICONS
+            To use your own icons, replace the img src with your own file path.
+            Each icon has a before and after-click state - if you only want one image,
+            just use the same file for both.
+                 ⚬────────────────────✧────────────────────⚬  -->
+            <div class="icons-container">
+
+                <!-- ⚬────────────────────✧────────────────────⚬  
+                                    LETTER PLANET
+                     ⚬────────────────────✧────────────────────⚬  -->
+                <button class="planet-btn" id="btn-letter" onclick="openModal('letter-modal'); markVisited('btn-letter')">
+                    <div class="planet-wrap">
+                        <div class="planet-glow" style="background: radial-gradient(circle, rgba(232, 107, 170, 0, 0.4) 0%, transparent 70%)"></div>
+                        <div class="planet-icon">
+            
+                            <div class="icon">
+                                <span class="icon-img" style="color: var(--rose);">
+                                    <!-- Before-click -->
+                                    <img src="./assets/icons/envelope-closed.png">
+                                </span>
+                            </div>
+
+                            <span class="icon-active" style="color: var(--rose);">
+                                <!-- After-click -->
+                                <img src="./assets/icons/envelope-open.png">
+                            </span>
+                        </div>
+                    </div>
+                    <span class="planet-label">♡ a letter for you ♡</span> <!-- Planet Label -->
+                </button>
+
+                <!-- ⚬────────────────────✧────────────────────⚬  
+                                 PHOTO ALBUM PLANET
+                     ⚬────────────────────✧────────────────────⚬  -->
+                <button class="planet-btn" id="btn-album" onclick="openModal('album-modal'); markVisited('btn-album')">
+                    <div class="planet-wrap">
+                        <div class="planet-glow" style="background: radial-gradient(circle, rgba(232, 107, 170, 0, 0.4) 0%, transparent 70%)"></div>
+                        <div class="planet-icon">
+            
+                            <div class="icon">
+                                <span class="icon-img" style="color: var(--rose);">
+                                    <!-- Before-click -->
+                                    <img src="./assets/icons/photo-album.png">
+                                </span>
+                            </div>
+
+                            <span class="icon-active" style="color: var(--rose);">
+                                <!-- After-click -->
+                                <img src="./assets/icons/photo-album.png">
+                            </span>
+                        </div>
+                    </div>
+                    <span class="planet-label">♡ our memories ♡</span> <!-- Planet Label -->
+                </button>
+
+                <!-- ⚬────────────────────✧────────────────────⚬  
+                                BLIND BOX PLANET (GACHA)
+                     ⚬────────────────────✧────────────────────⚬  -->
+                <button class="planet-btn" id="btn-gacha" onclick="openModal('gacha-modal'); markVisited('btn-gacha')">
+                    <div class="planet-wrap">
+                        <div class="planet-glow" style="background: radial-gradient(circle, rgba(232, 107, 170, 0, 0.4) 0%, transparent 70%)"></div>
+                        <div class="planet-icon">
+            
+                            <div class="icon">
+                                <span class="icon-img" style="color: var(--rose);">
+                                    <!-- Before-click -->
+                                    <img src="./assets/icons/blind-box.png">
+                                </span>
+                            </div>
+
+                            <span class="icon-active" style="color: var(--rose);">
+                                <!-- After-click -->
+                                <img src="./assets/icons/blind-box.png">
+                            </span>
+                        </div>
+                    </div>
+                    <span class="planet-label">♡ mystery pack! ♡</span> <!-- Planet Label -->
+                    <span class="planet-sublabel">(¬ᴗ¬)</span>
+                </button>
+
+            </div>
+        </div>
+        <!-- ⚬──────────────────── !! END OF MAIN UNIVERSE !! ────────────────────⚬ -->
+
+        <!-- ⚬────────────────────✧────────────────────⚬  
+                            LETTER MODAL
+             ⚬────────────────────✧────────────────────⚬  -->
+        <div class="modal-overlay" id="letter-modal">
+            <div class="modal">
+                <button class="modal-close" onclick="closeModal('letter-modal')">ㄨ</button>
+                <div class="modal-body" style="padding: 30px;">
+                    <div class="letter-paper">
+
+                        <div class="letter-seal">. ݁₊ ⊹ . ݁ ♡  ݁ . ⊹ ₊ ݁.</div> <!-- Letter Header -->
+
+                        <p class="letter-start">add your letter greeting here,</p>
+
+                        <!-- Letter Body - Replace with your letter -->
+                        <p>
+                            your letter goes here!
+                        </p>
+
+                        <p class="letter-closing">yours truly,</p>
+                        <p class="letter-signature">(your name)</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ⚬────────────────────✧────────────────────⚬  
+                          PHOTO ALBUM MODAL
+             ⚬────────────────────✧────────────────────⚬  -->
+        <div class="modal-overlay" id="album-modal">
+            <div class="modal">
+                <button class="modal-close" onclick="closeModal('album-modal')">ㄨ</button>
+                <div class="modal-header">
+                    <h2>𐙚⋆°Our Memories｡⋆♡</h2>
+                </div>
+                <div class="modal-body" id="album-body">
+                    <!-- This will be populated by renderAlbum() -->
+                </div>
+            </div>
+        </div>
+
+        <!-- ⚬────────────────────✧────────────────────⚬  
+                        BLIND BOX MODAL (GACHA)
+             ⚬────────────────────✧────────────────────⚬  -->
+        <div class="modal-overlay" id="gacha-modal">
+            <div class="modal" style="max-width: 480px;">
+                <button class="modal-close" onclick="closeModal('gacha-modal')">ㄨ</button>
+                <div class="modal-header">
+                    <h2>゛let's gamble ⸝⸝.ᐟ⋆</h2> <!-- Gacha Title (feel free to edit) -->
+                </div>
+                <div class="modal-body">
+                    <div class="gacha-container">
+                        <!-- Gacha Header Caption (feel free to edit) -->
+                        <p style="font-family:'SaranisFont'; font-style:italic; color:var(--stardust); opacity:0.7; margin-bottom:24px; font-size: 18px;">
+                            hmmmm let's see what you'll get! ദ്ദി(˵ •̀ ᴗ - ˵ ) ✧
+                        </p>
+                        
+                        <div class="gacha-orb-wrap">
+                            <div class="gacha-orb" id="gacha-orb" onclick="startPull()">
+                                <div class="gacha-orb-shine"></div>
+                                <div class="gacha-orb-text">TAP TO<br>PULL</div>
+                            </div>
+                        </div>
+
+                        <div class="gacha-pulls-left" id="pulls-display">pulls are available!</div>
+                        <p style="font-family:'Silkscreen', monospace; color:var(--stardust); opacity:0.5; margin-top:16px; font-size: 9px;">
+                            COMMON ✧ RARE ✧ LEGENDARY
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ⚬────────────────────✧────────────────────⚬  
+                        BLIND BOX REVEAL OVERLAY
+             ⚬────────────────────✧────────────────────⚬  -->
+        <div class="card-reveal-overlay" id="card-reveal">
+            <div class="tier-sparkles" id="sparkle-container"></div>
+
+            <div id="tier-announcement" style="font-family:'Silkscreen',monospace; font-size:11px; letter-spacing:0.2em; color:var(--rose); text-shadow:0 0 20px var(--pink); opacity:0; transition:opacity 0.5s ease; margin-bottom:10px;"></div>
+         
+            <div class="card-scene">
+                <div class="card" id="reveal-card" onclick="flipCard()">
+                    <!-- Back Face -->
+                    <div class="card-face card-back">
+                        <div class="card-back-design">
+                            <div class="star">⋆.𐙚 ̊</div>
+                            <p>our little<br>universe</p>
+                        </div>
+                    </div>
+                    <!-- Front Face (Tier class is applied by JS file) -->
+                     <div class="card-face card-front" id="card-front-face">
+                        <div class="card-tier-badge" id="card-tier-text">CARD</div> <!-- placeholder text -->
+                        <div class="card-image-area" id="card-image-area">
+                            <div class="card-holographic"></div>
+                        </div>
+                        <div class="card-label" id="card-label">CARD LABEL</div> <!-- placeholder text -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-instruction" id="card-instruction">. ݁₊ ⊹ click to reveal ⊹ ₊ ݁.</div>
+
+            <div class="card-reveal-actions" id="card-actions" style="display: none;">
+                <button class="card-reveal-btn primary" onclick="saveToAlbum()">save to album</button>
+                <button class="card-reveal-btn" onclick="closeReveal()">close</button>
+            </div>
+        </div>
+
+        <!-- ⚬────────────────────✧────────────────────⚬  
+                            ALBUM LIGHTBOX
+             ⚬────────────────────✧────────────────────⚬  -->
+        <div class="lightbox" id="lightbox">
+            <button class="lightbox-close" onclick="closeLightbox()">ㄨ</button>
+            <button class="lightbox-arrow left" onclick="lightboxPrev()">◀</button>
+            <div class="lightbox-content">
+                <img id="lightbox-img" src="" alt="memory photo">
+                <div class="lightbox-caption-box">
+                    <p id="lightbox-caption"></p>
+                </div>
+            </div>
+            <button class="lightbox-arrow right" onclick="lightboxNext()">▶</button>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

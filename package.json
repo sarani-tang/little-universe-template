@@ -1,0 +1,23 @@
+{
+  "name": "little-universe",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sarani-tang/little-universe.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/sarani-tang/little-universe/issues"
+  },
+  "homepage": "https://github.com/sarani-tang/little-universe#readme",
+  "devDependencies": {
+    "electron": "^41.1.0"
+  }
+}
