@@ -4,9 +4,7 @@
 
 A  little digital universe made for someone special. Drop in your photos, write a sweet letter, and enjoy a blind box inspired mini game that pulls randomized photo cards. Built with Electron.js and vanilla HTML, CSS and JavaScript. 
 
-
-₊˚ ✧ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━⊱⋆⊰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ✧ ₊˚
-
+₊˚ ✧ ━━━━━━━━━━━━━━━━⊱⋆⊰━━━━━━━━━━━━━━━━ ✧ ₊˚
 
 ## ✦ Features ✦
 - **Letter** - write a little personal note that users can view inside its own modal
@@ -15,9 +13,7 @@ A  little digital universe made for someone special. Drop in your photos, write 
 - **Animated Galaxy Background** - a twinkling pixel star field with soft pink nebula clouds, drawn using the HTML <canvas> element.
 - **Icon States** - planet icons are able to swap to an "after-click" version once visited. 
 
-
-₊˚ ✧ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━⊱⋆⊰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ✧ ₊˚
-
+₊˚ ✧ ━━━━━━━━━━━━━━━━⊱⋆⊰━━━━━━━━━━━━━━━━ ✧ ₊˚
 
 ## ✦ Project Structure ✦
 ```
@@ -33,7 +29,7 @@ little-universe/
 ```
 
 
-₊˚ ✧ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━⊱⋆⊰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ✧ ₊˚
+₊˚ ✧ ━━━━━━━━━━━━━━━━⊱⋆⊰━━━━━━━━━━━━━━━━ ✧ ₊˚
 
 
 ## ✦ Getting Started ✦
