@@ -4,7 +4,7 @@ A  little digital universe made for someone special. Drop in your photos, write 
 
 ## ┈┈・୨ Features ୧・┈┈
 - **Letter** - write a little personal note that users can view inside its own modal
-- **Photo Album** - organize all your favorite memories by year here. Click any photo to view the full-size photos along with its caption.
+- **Photo Album** - organize all your favorite memories by year as well as click any photo to view its full-size along with its caption.
 - **Blind Box** - A gacha-styled card pull system with three tiers (common, rare, legendary), sparkle animations, and a holographic card flip reveal. Users also have the option to save these pulls to the photo album.
 - **Animated Galaxy Background** - a twinkling pixel star field with soft pink nebula clouds, drawn using the HTML <canvas> element.
 - **Icon States** - planet icons are able to swap to an "after-click" version once visited. 
